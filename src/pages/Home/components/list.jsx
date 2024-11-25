@@ -1,7 +1,7 @@
 import Item from "./item";
 
-const List = ({ listData, deleteData }) => {
-    console.log('listData:', listData);
+const List = ({ listData, deleteData, submittingStatus }) => {
+    // console.log('listData:', listData);
     return (
         <div className="list">
             {
@@ -14,6 +14,7 @@ const List = ({ listData, deleteData }) => {
                         item_date={date}
                         item_time={time}
                         deleteData={deleteData}
+                        submittingStatus={submittingStatus}
                     />
                 })
 

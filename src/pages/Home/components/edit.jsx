@@ -23,12 +23,12 @@ const Edit = ({ add }) => {
     function addItem() {
         add(
             function (prevData) {
-                return [...prevData, {
+                return [{
                     id: v4(),
                     note,
                     date,
                     time
-                }];
+                }, ...prevData];
             }
         );
     }
